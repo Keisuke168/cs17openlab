@@ -367,17 +367,101 @@ svg {
 	}
 }
 
+/* 研究分野 */
+.research {
+	padding: 5px 0;
+	text-align: center;
+}
+
+.research h2 {
+	color: #477294;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.research h2 span {
+	font-weight: normal;
+}
+
+.research .item p:first-of-type {
+	margin-bottom: 0px;
+	color: #477294;
+	font-size: 19px;
+	line-height: 23px;
+	padding: 10px 0px;
+}
+
+.research .items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.research .item {
+	width: 8%;
+	margin-bottom: 0px;
+}
+
+.research .item figure{
+	border: #222;
+}
+
+.research .content h3 {
+	font-size: 25px;
+	padding: 20px;
+	color:#477294;
+}
+
+.research .content {
+	padding: 0px;
+	margin-bottom: 30px;
+}
+
+
+
+/* イベント */
+.event {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.event h2 {
+	color: #477294;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.event h2 span {
+	font-weight: normal;
+}
+
+
+/* オープンラボについて */
+.openlab {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.openlab h2 {
+	color: #477294;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.openlab h2 span {
+	font-weight: normal;
+}
+
+
+
 
 /* フォト */
-.photo figure {
-	max-height: 100%;
-	height: 170px;
+
+.photo {
+	text-align: center;
+	width: 100%;
 }
 
 .photo img {
-	width: 100%;
-	height: 170px;
 	object-fit: cover;
+	transform: translateX(50%);
+  	-webkit-transform: translateX(50%);
 }
 
 @media (min-width: 768px) {

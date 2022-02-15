@@ -73,8 +73,57 @@ export default ({ data }) => (
         </div>
     </section>
 
+    <section className="research">
+      <div className="container">
+        <h2 className="bar">CS17で研究できる分野</h2>
+        <div className="items">
+          <div className="item">
+            <figure>
+              <Img fluid={data.music.childImageSharp.fluid} alt="" />
+              <p>音声</p>
+            </figure>
+          </div>
+          <div className="item">
+            <figure>
+              <Img fluid={data.camera.childImageSharp.fluid} alt="" />
+              <p>Computer Vision</p>
+            </figure>
+          </div>
+          <div className="item">
+            <figure>
+              <Img fluid={data.brain.childImageSharp.fluid} alt="" />
+              <p>脳</p>
+            </figure>
+          </div>
+          <div className="item">
+            <figure>
+              <Img fluid={data.hukusi.childImageSharp.fluid} alt="" />
+              <p>福祉<br/>+<br/>人工知能</p>
+            </figure>
+          </div>
+          <div className="item">
+            <figure>
+              <Img fluid={data.iryo.childImageSharp.fluid} alt="" />
+              <p>基礎/応用医学<br/>+<br/>人工知能</p>
+            </figure>
+          </div>
 
-    <section className="food">
+        </div>
+        <div className="content">
+          <p>
+          具体的な研究テーマについては，学生の希望を尊重します．<br/>
+          週2~3回のゼミへの参加を除いては，<br/>
+          学生の皆さんが，いつ，どこで研究するかは各自で決めます．<br/>
+          受け身ではなく，自ら進んで研究スケジュールや内容を管理して，<br/>
+          学会発表（年数回）に向けて研究を進めます．<br/>
+          </p>
+          <h3>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <section className="event">
       <div className="container">
         <h2 className="bar">
           Enjoy! イベント
@@ -82,53 +131,61 @@ export default ({ data }) => (
         <div className="details">
           <div className="detail">
             <figure>
-              <Img fluid={data.fruit.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zero.childImageSharp.fluid} alt="" />
             </figure>
-            <h3>フルーツ</h3>
-            <p>FRUIT</p>
+            <p>研究室旅行</p>
             <p>
-              甘くてすっぱくておいしい果実たち。
+            例年，国内のどこかに皆で旅行に行きます．
               <br />
-              旬のフルーツを満喫します。
+              昨年度は神戸のワイナリーに行きました．
             </p>
           </div>
           <div className="detail">
             <figure>
-              <Img fluid={data.grain.childImageSharp.fluid} alt="" />
+              <Img fluid={data.one.childImageSharp.fluid} alt="" />
             </figure>
-            <h3>穀物</h3>
-            <p>GRAIN</p>
+            <p>発表会打ち上げ，追いコン</p>
             <p>
-              食事の基本となる穀物。
-              <br />
-              毎日の活動のエネルギー源になります。
+            年に数回ある研究室発表会の後は<br/>
+            労をねぎらうため，打ち上げを行っています．<br/>
+            また，年度末には卒業される先輩方を<br/>
+            お送りする追いコンを開催します．<br/>
             </p>
           </div>
           <div className="detail">
             <figure>
-              <Img fluid={data.beverage.childImageSharp.fluid} alt="" />
+              <Img fluid={data.two.childImageSharp.fluid} alt="" />
             </figure>
-            <h3>飲み物</h3>
-            <p>BEVERAGE</p>
+            <p>その他イベント</p>
             <p>
-              リラックスするのに欠かせない飲み物。
-              <br />
-              お気に入りの一杯はありますか？
+            その他にも，研究室の有志で<br/>
+            色々なイベントを開催しています．<br/>
+            例えば…<br/>
+            たこ焼きパーティー，
+            王子公園でテニス，など
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section className="photo">
-      <h2 className="sr-only">Photo</h2>
-      <figure>
-        <Img
-          fluid={data.berry.childImageSharp.fluid}
-          alt="赤く熟したベリー"
-          style={{ height: "100%" }}
-        />
-      </figure>
+
+    <section className="openlab">
+      <div className="container">
+        <h2 className="bar">
+          ２０２２年３月の<br/>オープンラボについて
+        </h2>
+
+      </div>
     </section>
+
+    {/* <section className="photo">
+      <h2 className="sr-only">Photo</h2>
+      <Img
+        fluid={data.ai.childImageSharp.fluid}
+        alt="ai"
+        style={{ width: "50%", textAlign: "center" }}
+      />
+    </section> */}
   </Layout>
 )
 
@@ -142,35 +199,68 @@ export const query = graphql`
       }
     }
 
-    hero: file(relativePath: { eq: "hero.jpg" }) {
+    music: file(relativePath: { eq: "music.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    fruit: file(relativePath: { eq: "fruit.jpg" }) {
+    
+    camera: file(relativePath: { eq: "camera.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    brain: file(relativePath: { eq: "brain.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    hukusi: file(relativePath: { eq: "hukusi.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    iryo: file(relativePath: { eq: "iryo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    zero: file(relativePath: { eq: "0.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    grain: file(relativePath: { eq: "grain.jpg" }) {
+    one: file(relativePath: { eq: "1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    beverage: file(relativePath: { eq: "beverage.jpg" }) {
+    two: file(relativePath: { eq: "2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    berry: file(relativePath: { eq: "berry.jpg" }) {
+    ai: file(relativePath: { eq: "ai.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp

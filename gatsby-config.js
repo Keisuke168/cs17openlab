@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `cs17-openLab`,
+    title: `CS17オープンラボ特設サイト`,
     description: `2022年滝口研究室のオープンラボ特設サイト`,
     lang: `ja`,
     siteUrl: `https://********.netlify.app`,
