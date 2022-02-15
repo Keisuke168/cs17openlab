@@ -39,10 +39,45 @@ export default ({ data }) => (
         </svg>
       </div>
     </section>
-    <section className="food">
+    <section className="mess">
       <div className="container">
         <h2 className="bar">
           先生からのメッセージ
+        </h2>
+      </div>
+        <div className="items">
+          <div className="item">
+              <figure>
+                <Img fluid={data.sense.childImageSharp.fluid} alt="" />
+              </figure>
+          </div>
+          <div className="item">
+              <p>当研究室を希望する皆さんへ</p>
+              <p>
+                3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
+                
+                我々の研究室では，音声，対話，コンピュータビジョン，脳に関す
+               
+                る研究をしています．この分野は，大学のみならず世界のIT企業
+              
+                Google，IBM，Apple，Microsoft，Amazon，Facebookな
+            
+                どが力を入れて研究開発を進めています．
+              
+                私たちは，特に医学，保健学，生物学など様々な異分野の融合によ
+             
+                る新しい研究を目指しています．
+
+              </p>
+          </div>
+        </div>
+    </section>
+
+
+    <section className="food">
+      <div className="container">
+        <h2 className="bar">
+          Enjoy! イベント
         </h2>
         <div className="details">
           <div className="detail">
@@ -99,6 +134,14 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
+    sense: file(relativePath: { eq: "takigutisense.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
     hero: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
