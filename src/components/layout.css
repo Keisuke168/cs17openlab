@@ -192,7 +192,7 @@ svg {
 
 .mess h2 {
 	color: #477294;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	font-size: 30px;
 }
 .mess h2 span {
@@ -202,6 +202,7 @@ svg {
 .item {
 	padding: 30px;
 	margin-bottom: 50px;
+	font-size: 18px;
 }
 
 .item figure {
@@ -390,18 +391,17 @@ svg {
 	padding: 10px 0px;
 }
 
-.research .items {
+.research .items{
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0px;
+	justify-content: space-evenly;
 }
 
 .research .item {
-	width: 8%;
-	margin-bottom: 0px;
-}
-
-.research .item figure{
-	border: #222;
+	width: 25%;
+	margin: 0px;
+	padding: 5px;
 }
 
 .research .content h3 {
@@ -410,11 +410,65 @@ svg {
 	color:#477294;
 }
 
-.research .content {
+.research .content p {
 	padding: 0px;
-	margin-bottom: 30px;
+	margin: 15px;
+	font-size: 18px;
 }
 
+@media (min-width: 768px){
+	.research .item p:first-of-type {
+		margin-bottom: 0px;
+		color: #477294;
+		font-size: 19px;
+		line-height: 23px;
+		padding: 10px 0px;
+	}
+	
+	.research .items {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.research .item {
+		width: 8%;
+		margin-bottom: 0px;
+	}
+	
+	.research .content h3 {
+		font-size: 25px;
+		padding: 20px;
+		color:#52878e;
+	}
+	
+	.research .content {
+		padding: 0px;
+		margin-bottom: 30px;
+	}
+}
+
+/* レッツ研究 */
+.lets {
+	padding: 5px 0;
+	text-align: center;
+}
+
+.lets h2 {
+	color: #477294;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.lets h2 span {
+	font-weight: normal;
+}
+
+.lets .item p:first-of-type {
+	margin-bottom: 0px;
+	color: #477294;
+	font-size: 19px;
+	line-height: 23px;
+	padding: 10px 0px;
+}
 
 
 /* イベント */

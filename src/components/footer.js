@@ -32,13 +32,6 @@ export default () => {
         </div>
         
       </div>
-      <div className="back">
-        <Img
-          fluid={data.pattern.childImageSharp.fluid}
-          alt=""
-          style={{ height: "100%" }}
-        />
-      </div>
     </footer>
   )
 }

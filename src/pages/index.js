@@ -56,17 +56,11 @@ export default ({ data }) => (
               <p>
                 3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
                 
-                我々の研究室では，音声，対話，コンピュータビジョン，脳に関す
-               
-                る研究をしています．この分野は，大学のみならず世界のIT企業
+                我々の研究室では，音声，対話，コンピュータビジョン，脳に関する研究をしています．
+                
+                この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Facebookなどが力を入れて研究開発を進めています．
               
-                Google，IBM，Apple，Microsoft，Amazon，Facebookな
-            
-                どが力を入れて研究開発を進めています．
-              
-                私たちは，特に医学，保健学，生物学など様々な異分野の融合によ
-             
-                る新しい研究を目指しています．
+                私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を目指しています．
 
               </p>
           </div>
@@ -119,6 +113,14 @@ export default ({ data }) => (
           </p>
           <h3>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
         </div>
+      </div>
+    </section>
+
+    <section className="lets">
+      <div className="container">
+        <h2 className="bar">
+          Let's 研究！
+        </h2>
       </div>
     </section>
 
