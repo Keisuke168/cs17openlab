@@ -29,7 +29,7 @@ h2::after {
 
 @media (min-width: 768px) {
 	h2 {
-		max-width: 375px;
+		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -46,7 +46,7 @@ h2::after {
 
 @media (min-width: 768px) {
 	.wrapper{
-		margin: 100px;
+		margin: 50px 20%;
 	}
 }
 
@@ -58,13 +58,23 @@ h2::after {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin: 30px;
+}
+
+@media (max-width: 768px) {
+	.cont{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .hoge {
 	width: 48%;
+	vertical-align: top;
 }
+
+
 
 img:hover{
 	pointer-events: none;

@@ -112,6 +112,7 @@ export default ({ data }) => (
         <h2 className="bar">
           Let's 研究！
         </h2>
+
       </div>
     </section>
 
@@ -167,6 +168,45 @@ export default ({ data }) => (
         <h2 className="bar">
           ２０２２年３月の<br/>オープンラボについて
         </h2>
+        <div className="items">
+          <div className="item">
+              研究室見学を開催します．
+              <br/>
+              音声，対話，コンピュータビジョン，
+              <br/>
+              脳に関する研究に興味のある人は，
+              <br/>
+              ぜひ見学にお越しください．
+              <br/><br/>
+              教員，学生による研究室紹介と
+              みなさんの質問にお答えします！
+              <br/>
+              また当日は混雑緩和のため<br/>
+              予約制（Google Forms）とします．
+              <br/><br/>
+              質問があれば，気軽に下記（滝口）まで．<br/>
+
+              <span>takigu@kobe-u.ac.jp</span><br/><br/>
+
+              （コロナ禍で大学に来ることができない学生は連絡ください．）
+          </div>
+          <div className="item" style={{textAlign: 'left'}}>
+
+          場所：<br/>
+        　　自然科学研究棟３号館<br/>
+        　　８階805<br/>
+          <div className="items">
+            <div className="itemi">
+              <Img fluid={data.op1.childImageSharp.fluid} alt="" />
+            </div>
+            <div className="itemi">
+              <Img fluid={data.op2.childImageSharp.fluid} alt="" />
+            </div>
+          </div>
+
+
+          </div>
+        </div>
 
       </div>
     </section>
@@ -256,6 +296,20 @@ export const query = graphql`
     pattern: file(relativePath: { eq: "pattern.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    op1: file(relativePath: { eq: "op1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    op2: file(relativePath: { eq: "op2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
