@@ -507,6 +507,16 @@ video{
 	flex-direction: column;
 }
 
+.openlab .item {
+	font-size: 13px;
+}
+
+@media (min-width: 768px) {
+	.openlab .item {
+		font-size:18px;
+	}
+}
+
 .openlab .items .itemi {
 	padding: 5px;
 	width: 100%;
@@ -515,6 +525,7 @@ video{
 @media (min-width: 768px) {
 	.openlab .items{
 		flex-direction:row;
+		font-size:20px;
 	}
 	.openlab .items .item {
 		padding: 5px;

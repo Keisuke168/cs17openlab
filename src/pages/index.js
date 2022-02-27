@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import Links from "../components/links"
 
 
 
@@ -105,16 +106,17 @@ export default ({ data }) => (
           <h3>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
         </div>
       </div>
+      <Links/>
     </section>
 
-    <section className="lets">
+    {/* <section className="lets">
       <div className="container">
         <h2 className="bar">
           Let's 研究！
         </h2>
 
       </div>
-    </section>
+    </section> */}
 
 
     <section className="event">

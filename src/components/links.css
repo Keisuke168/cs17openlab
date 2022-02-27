@@ -1,0 +1,20 @@
+.links .link{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+    background-color:#5489b1;
+}
+
+.link h3{
+    top:50%;
+    transform:translateY(50%)
+}
+
+.links{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
