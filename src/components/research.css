@@ -74,8 +74,30 @@ h2::after {
 	vertical-align: top;
 }
 
+@media (max-width: 768px) {
+	.hoge{
+		width: 95%;
+		margin :10px 0;
+	}
+}
+
 
 
 img:hover{
 	pointer-events: none;
+}
+
+.block{
+	width: 100%;
+}
+
+@media (max-width: 768px){
+	.block{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1{
+		font-size: 20px;
+	}
 }
