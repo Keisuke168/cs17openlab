@@ -10,13 +10,13 @@ import Links from "../components/links"
 
 
 
-import Movie from '../images/1000A500.mp4'
+import Movie from '../images/detach_i.mp4'
 
 export default ({ data }) => (
   <Layout>
     <SEO />
     <Header/>
-    <video autoPlay loop muted playsInline>
+    <video autoPlay muted loop playsInline>
                 <source src={Movie} type="video/mp4" />
     </video>
    

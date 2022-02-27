@@ -7,7 +7,8 @@ const Links = ()=>{
     return(
         <div className="links">
             <Link to={'/research1'} className="link">
-                <h3>マルチモーダル<br/>認識</h3>
+                <h3>マルチモーダル</h3>
+                <h3>認識</h3>
             </Link>
             <Link to={'/research2'} className="link">
                 <h3>アカペラ<br/>歌声合成</h3>
