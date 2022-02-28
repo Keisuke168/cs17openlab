@@ -51,7 +51,7 @@ export default ({ data }) => (
                 
                 我々の研究室では，音声，対話，コンピュータビジョン，脳に関する研究をしています．
                 
-                この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Facebookなどが力を入れて研究開発を進めています．
+                この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Metaなどが力を入れて研究開発を進めています．
               
                 私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を行っています．
 
