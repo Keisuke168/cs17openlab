@@ -170,7 +170,7 @@ export default ({ data }) => (
     <section className="openlab">
       <div className="container">
         <h2 className="bar">
-          ２０２２年３月の<br/>オープンラボについて
+          2022年3月の<br/>オープンラボについて
         </h2>
         <div className="items">
           <div className="item">
@@ -207,6 +207,9 @@ export default ({ data }) => (
               <Img fluid={data.op2.childImageSharp.fluid} alt="" />
             </div>
           </div>
+
+          <br/><br/>
+          <span>日程は現在調整中です.</span>
 
 
           </div>
