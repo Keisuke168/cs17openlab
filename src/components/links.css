@@ -4,17 +4,22 @@
     margin: 10px;
     border-radius: 50%;
     color: white;
-    background-color:#5489b1;
+    background-color:#bf0000;
+    font-weight: 100;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
+.links .link:hover{
+    transform: scale(1.1, 1.1);
+}
+
 
 
 .links{
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
 	justify-content: space-evenly;

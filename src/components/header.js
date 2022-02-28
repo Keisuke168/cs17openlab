@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Header =  () => (
-  <header className="header">
+const Header =  ({bg}) => (
+  <header className="header" style={{background: bg}}>
     <div className="container">
       <div className="site">
         <Link to={`/`}>
@@ -12,9 +12,6 @@ const Header =  () => (
       </div>
       <nav className="nav">
         <ul>
-          <li>
-            <Link to={`/`}>TOP</Link>
-          </li>
           <li>
             <Link to={`http://www.me.cs.scitec.kobe-u.ac.jp/`}>研究室公式HP</Link>
           </li>

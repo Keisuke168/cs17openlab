@@ -54,7 +54,7 @@ export default ({ data }) => (
                 
                 この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Facebookなどが力を入れて研究開発を進めています．
               
-                私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を目指しています．
+                私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を行っています．
 
               </p>
           </div>
@@ -129,12 +129,22 @@ export default ({ data }) => (
         <div className="details">
           <div className="detail">
             <figure>
-              <Img fluid={data.zero.childImageSharp.fluid} alt="" />
+              <Img fluid={data.three.childImageSharp.fluid} alt="" />
             </figure>
-            <p>研究室旅行</p>
+            <p>研究室旅行①</p>
             <p>
             例年，国内のどこかに皆で旅行に行きます．
               <br />
+              2019年度はしまなみ海道にサイクリング，<br/>
+              2018年度は淡路島に旅行に行きました．
+            </p>
+          </div>
+          <div className="detail">
+            <figure>
+              <Img fluid={data.zero.childImageSharp.fluid} alt="" />
+            </figure>
+            <p>研究室旅行②</p>
+            <p>
               昨年度は神戸のワイナリーに行きました．
             </p>
           </div>
@@ -287,6 +297,13 @@ export const query = graphql`
       }
     }
     two: file(relativePath: { eq: "2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 320) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    three: file(relativePath: { eq: "3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid_withWebp
