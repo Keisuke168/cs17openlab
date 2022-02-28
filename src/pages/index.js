@@ -10,7 +10,7 @@ import Links from "../components/links"
 
 
 
-import Movie from '../images/1000A500.mp4'
+import Movie from '../images/video.mp4'
 
 export default ({ data }) => (
   <Layout>
