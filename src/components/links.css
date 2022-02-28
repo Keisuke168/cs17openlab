@@ -4,7 +4,8 @@
     margin: 10px;
     border-radius: 50%;
     color: white;
-    background-color:#bf0000;
+    /* background-color:#bf0000; */
+    background: linear-gradient(to bottom right, #E17E56, rgb(191, 0, 0));
     font-weight: 100;
     display: flex;
     align-items: center;

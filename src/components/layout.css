@@ -197,13 +197,17 @@ video{
 .mess h2 {
 	color: black;
 	margin-bottom: 25px;
-	font-size: 30px;
+	font-size: 27px;
 }
 
 
 
 .mess h2 span {
 	font-weight: normal;
+}
+
+.mess .item{
+	text-align: left;
 }
 
 .item {
@@ -345,9 +349,13 @@ video{
 
 @media (min-width: 768px) {
 	.bar {
-		max-width: 375px;
+		max-width: 400px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.mess .bar{
+		max-width: 600px;
 	}
 
 	.bar::before,

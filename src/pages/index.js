@@ -36,7 +36,7 @@ export default ({ data }) => (
     <section className="mess">
       <div className="container">
         <h2 className="bar">
-        当研究室を希望する皆さんへ
+          当研究室（大学院進学）を希望する皆さんへ
         </h2>
       </div>
         <div className="items">
