@@ -159,14 +159,6 @@ video{
 	font-size: 15px;
 }
 
-.hero .wave {
-	position: absolute;
-	right: 0;
-	bottom: -10px;
-	left: 0;
-	margin: auto;
-	width: 100%;
-}
 
 @media (min-width: 768px) {
 	.hero .catch h1 {
@@ -770,3 +762,47 @@ video{
 	margin-left: 10px;
 }
 
+
+.phrase {
+	height: 50vh;
+	width: 100%;
+}
+
+.phrase .catch {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);
+	font-family:'Times New Roman', Times, serif;
+
+}
+
+.phrase .catch h1 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.phrase span{
+	color: #A52E23;
+}
+
+@media (min-width: 768px) {
+	.phrase .catch h1 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	.phrase .catch p {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 900px) {
+	.phrase .catch h1 {
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+}

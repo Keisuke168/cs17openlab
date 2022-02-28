@@ -108,17 +108,17 @@ export default ({ data }) => (
         </div>
       </div>
       <Links/>
-      <h3 className='issho'>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
+      
     </section>
 
-    {/* <section className="lets">
-      <div className="container">
-        <h2 className="bar">
-          Let's 研究！
-        </h2>
 
+    <div className="phrase">
+      <div className="catch">
+        <h1>
+          We focus on high-impact research.
+        </h1>
       </div>
-    </section> */}
+    </div>
 
 
     <section className="event">
@@ -227,6 +227,14 @@ export default ({ data }) => (
 
       </div>
     </section>
+
+    <div className="phrase">
+      <div className="catch">
+        <h1>
+        Nothing is impossible. <br/>Change <span>the Future of AI</span>.
+        </h1>
+      </div>
+    </div>
 
     <Footer/>
   </Layout>
