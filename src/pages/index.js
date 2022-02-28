@@ -36,7 +36,7 @@ export default ({ data }) => (
     <section className="mess">
       <div className="container">
         <h2 className="bar">
-          先生からのメッセージ
+        当研究室を希望する皆さんへ
         </h2>
       </div>
         <div className="items">
@@ -46,7 +46,6 @@ export default ({ data }) => (
               </figure>
           </div>
           <div className="item">
-              <p>当研究室を希望する皆さんへ</p>
               <p>
                 3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
                 
@@ -223,6 +222,18 @@ export default ({ data }) => (
 
 
           </div>
+        </div>
+        <div className="thesis-theme"> 
+          <h3>卒業研究テーマ</h3>
+          <ul>
+            <li>人の意図や心理を理解する対話/自然言語処理に関する研究 </li>
+            <li>発話障害者のための深層学習に基づく音声認識の研究 </li>
+            <li>表情豊かなオペラ歌声合成の研究 </li>
+            <li>エッジAIのためのDeep Learningコンパイラの研究 </li>
+            <li>物理シミュレーションと深層学習の融合に関する研究 </li>
+            <li>脳神経細胞のパターン予測に関する研究 </li>
+            <li>脳神経活動から想起内容の生成に関する研究 </li>
+          </ul>
         </div>
 
       </div>
