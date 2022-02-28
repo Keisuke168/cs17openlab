@@ -21,9 +21,6 @@ export default ({ data }) => (
                 <source src={Movie} type="video/mp4" />
     </video>
     </div>
-    {/* <video autoPlay muted loop playsInline>
-                <source src={Movie} type="video/mp4" />
-    </video> */}
    
     <div className="hero">
       
