@@ -147,6 +147,7 @@ video{
 	color: #fff;
 	text-shadow: 0 0 20px rgba(0,0,0,0.5);
 	font-family:'Times New Roman', Times, serif;
+	transform: translateY(-100px)
 
 }
 
@@ -174,6 +175,9 @@ video{
 	}
 	.hero .catch p {
 		font-size: 16px;
+	}
+	.hero .catch{
+		transform: none;
 	}
 }
 
