@@ -105,10 +105,10 @@ export default ({ data }) => (
           受け身ではなく，自ら進んで研究スケジュールや内容を管理して，<br/>
           学会発表（年数回）に向けて研究を進めます．<br/>
           </p>
-          <h3>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
         </div>
       </div>
       <Links/>
+      <h3 className='issho'>私たちと一緒に，<br/>新たなユニークな研究を始めましょう!</h3>
     </section>
 
     {/* <section className="lets">

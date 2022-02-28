@@ -1,6 +1,7 @@
 .links .link{
     width: 150px;
     height: 150px;
+    margin: 10px;
     border-radius: 50%;
     color: white;
     background-color:#5489b1;
@@ -13,13 +14,19 @@
 
 
 .links{
-    width: 50%;
-    height: 400px;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
     margin: 0 auto;
 }
 
-.links div{
+@media (max-width: 768px){
+    .links{
+        width: 100%;
+    }
+
+    .links .link{
+        margin: 5px 0;
+    }
 }

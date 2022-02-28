@@ -374,7 +374,7 @@ video{
 .research h2 {
 	color: #477294;
 	margin-bottom: 20px;
-	font-size: 30px;
+	font-size: 28px;
 }
 .research h2 span {
 	font-weight: normal;
@@ -419,6 +419,12 @@ video{
 	font-size: 18px;
 }
 
+.research .issho {
+	font-size: 25px;
+	padding: 20px;
+	color:#52878e;
+}
+
 @media (min-width: 768px){
 	.research .item p:first-of-type {
 		margin-bottom: 0px;
@@ -438,7 +444,7 @@ video{
 		margin-bottom: 0px;
 	}
 	
-	.research .content h3 {
+	.research .issho {
 		font-size: 25px;
 		padding: 20px;
 		color:#52878e;
