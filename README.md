@@ -1,13 +1,3 @@
-# 第１部 完成サンプル
+# 2022年度滝口研究室 Open Lab.
 
-**Netlifyにデプロイしたサイト** ： https://gatsby-essentials-5.netlify.app/
-
-
-------------------------------------------------------
-
-『Webサイト高速化のための 静的サイトジェネレーター活用入門』  
-  GatsbyJSで実現する、高速＆実用的なサイト構築
-
-* [サポートサイト](https://book.mynavi.jp/supportsite/detail/9784839973001.html) 
-* [書籍情報](https://ebisu.com/gatsbyjs-book/)
-# cs17openlab
+サイト : cs17kobe-u.com
