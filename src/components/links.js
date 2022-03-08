@@ -34,6 +34,12 @@ const Links = ()=>{
             <Link to={'/research9'} className="link">
                 <h3>口唇口蓋裂者<br/>の音声認識</h3>
             </Link>
+            <Link to={'/research10'} className="link">
+                <h3>雑談対話</h3>
+            </Link>
+            <Link to={'/research11'} className="link">
+                <h3>金属・樹脂の<br/>構造設計</h3>
+            </Link>
         </div>
     )
 }

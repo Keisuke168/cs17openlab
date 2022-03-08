@@ -90,6 +90,10 @@ svg {
 	/* text-shadow: 1px 0 0 rgb(151, 151, 151), 0 1px 0 rgb(151, 151, 151), -1px 0 0 rgb(151, 151, 151), 0 -1px 0 rgb(151, 151, 151); */
 }
 
+.header .site{
+	display: none;
+}
+
 .nav ul {
 	display: flex;
 	justify-content: center;
@@ -156,7 +160,7 @@ video{
 	margin-bottom: 10px;
 }
 .hero .catch p {
-	font-size: 15px;
+	font-size: 25px;
 }
 
 
@@ -166,7 +170,7 @@ video{
 		margin-bottom: 30px;
 	}
 	.hero .catch p {
-		font-size: 16px;
+		font-size: 30px;
 	}
 	.hero .catch{
 		transform: none;
@@ -179,7 +183,7 @@ video{
 		margin-bottom: 30px;
 	}
 	.hero .catch p {
-		font-size: 24px;
+		font-size: 40px;
 	}
 }
 
@@ -187,7 +191,8 @@ video{
 /* . */
 .mess {
 	padding: 30px 0;
-	text-align: center;
+	text-align: justify;
+	text-justify: inter-ideograph;
 	background:rgba(255, 255, 255, 0.90);
 	margin: 100px 15px; 
 }
@@ -382,6 +387,12 @@ video{
 	margin: 100px 15px;
 }
 
+@media (min-width: 768px) {
+	.research{
+		text-align: center;
+	}
+}
+
 .research h2 {
 	color: black;
 	margin-bottom: 20px;
@@ -427,7 +438,15 @@ video{
 .research .content p {
 	padding: 0px;
 	margin: 15px;
-	font-size: 18px;
+	font-size: 16px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+@media (min-width: 768px){
+	.research .content p{
+		text-align: center;
+	}
 }
 
 .research .issho {
@@ -768,11 +787,15 @@ video{
 .phrase .catch h1 {
 	font-size: 30px;
 	margin-bottom: 10px;
+	width: 75%;
+	margin: 100px auto;
 }
 
 .phrase span{
 	color: #A52E23;
 }
+
+
 
 @media (min-width: 768px) {
 	.phrase .catch h1 {

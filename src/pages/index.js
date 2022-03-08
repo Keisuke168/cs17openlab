@@ -47,13 +47,7 @@ export default ({ data }) => (
           </div>
           <div className="item">
               <p>
-                3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
-                
-                我々の研究室では，音声，対話，コンピュータビジョン，脳に関する研究をしています．
-                
-                この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Metaなどが力を入れて研究開発を進めています．
-              
-                私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を行っています．
+                3年生4Qで，ディジタル信号処理の授業を担当している滝口です．我々の研究室では，音声，対話，自然言語，コンピュータビジョン，脳科学に関する研究をしています．この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Metaなどが力を入れて研究開発を進めています．私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を行っています．
 
               </p>
           </div>
@@ -95,6 +89,8 @@ export default ({ data }) => (
             </figure>
           </div>
 
+          
+
         </div>
         <div className="content">
           <p>
@@ -107,7 +103,7 @@ export default ({ data }) => (
         </div>
       </div>
       <Links/>
-      
+      <Img fluid={data.labmem.childImageSharp.fluid} alt="" />
     </section>
 
 
@@ -187,7 +183,7 @@ export default ({ data }) => (
               <br/>
               音声，対話，コンピュータビジョン，
               <br/>
-              脳に関する研究に興味のある人は，
+              脳科学に関する研究に興味のある人は，
               <br/>
               ぜひ見学にお越しください．
               <br/><br/>
@@ -224,7 +220,7 @@ export default ({ data }) => (
           </div>
         </div>
         <div className="thesis-theme"> 
-          <h3>卒業研究テーマ</h3>
+          <h3>卒業研究テーマ例</h3>
           <ul>
             <li>人の意図や心理を理解する対話/自然言語処理に関する研究 </li>
             <li>発話障害者のための深層学習に基づく音声認識の研究 </li>
@@ -242,12 +238,13 @@ export default ({ data }) => (
     <div className="phrase">
       <div className="catch">
         <h1>
-        Nothing is impossible. <br/>Change <span>the Future of AI</span>.
+        {/* Nothing is impossible. <br/>Change <span>the Future of AI</span>. */}
+        <Img fluid={data.mess.childImageSharp.fluid} alt="" />
         </h1>
       </div>
     </div>
 
-    <Footer/>
+    <Footer to='http://www.me.cs.scitec.kobe-u.ac.jp/' text='＞研究室公式HP'/>
   </Layout>
 )
 
@@ -351,6 +348,20 @@ export const query = graphql`
       }
     }
     op2: file(relativePath: { eq: "op2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    mess: file(relativePath: { eq: "mess2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    labmem: file(relativePath: { eq: "labmember.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp

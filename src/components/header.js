@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 const Header =  ({bg}) => (
   <header className="header" style={{background: bg}}>
     <div className="container">
-      <div className="site">
+      {/* <div className="site">
         <Link to={`/`}>
           <h1>CS17 滝口研究室</h1>
           <p>Media Informatics Lab.</p>
         </Link>
-      </div>
+      </div> */}
       <nav className="nav">
         <ul>
           <li>

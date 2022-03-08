@@ -9,7 +9,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
 
-const Footer =  () => {
+const Footer =  ({to, bg, text}) => {
   const data = useStaticQuery(graphql`
     query {
       pattern: file(relativePath: { eq: "pattern.jpg" }) {
@@ -23,11 +23,11 @@ const Footer =  () => {
   `)
 
   return (
-    <footer className="footer">
+    <footer className="footer" style={{background: bg}}>
       <div className="container">
         <div className="site">
-          <Link to={`http://www.me.cs.scitec.kobe-u.ac.jp/`}>
-            <h1>＞研究室公式HP</h1>
+          <Link to={to}>
+            <h1>{text}</h1>
           </Link>
         </div>
         
