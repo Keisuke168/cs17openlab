@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -85,7 +85,7 @@ export default ({ data }) => (
           <div className="item">
             <figure>
               <Img fluid={data.iryo.childImageSharp.fluid} alt="" />
-              <p>基礎/応用医学<br/>+<br/>人工知能</p>
+              <p>基礎/<br/>応用医学<br/>+<br/>人工知能</p>
             </figure>
           </div>
 
@@ -187,7 +187,7 @@ export default ({ data }) => (
               <br/>
               ぜひ見学にお越しください．
               <br/><br/>
-              教員，学生による研究室紹介と
+              教員，学生による研究室紹介と<br/>
               みなさんの質問にお答えします！
               <br/>
               また当日は混雑緩和のため<br/>
@@ -197,9 +197,13 @@ export default ({ data }) => (
 
               <span>takigu@kobe-u.ac.jp</span><br/><br/>
 
-              （コロナ禍で大学に来ることができない学生は連絡ください．）
+              （コロナ禍で大学に来ることが<br/>できない学生は連絡ください．）
           </div>
           <div className="item" style={{textAlign: 'left'}}>
+
+          時間：<br/>
+          <Img fluid={data.sche.childImageSharp.fluid} alt="" />
+          <br/><br/>
 
           場所：<br/>
         　　自然科学研究棟３号館<br/>
@@ -213,12 +217,11 @@ export default ({ data }) => (
             </div>
           </div>
 
-          <br/><br/>
-          <span>日程は現在調整中です.</span>
-
-
           </div>
         </div>
+        <Link to={'https://forms.gle/GyzgwfZnqUHDia5M9'} target="_blank">
+                <h3 className="form">オープンラボ予約はこちらから（Google Form）</h3>
+        </Link>
         <div className="thesis-theme"> 
           <h3>卒業研究テーマ例</h3>
           <ul>
@@ -362,6 +365,13 @@ export const query = graphql`
       }
     }
     labmem: file(relativePath: { eq: "labmember.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sche: file(relativePath: { eq: "sche.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp

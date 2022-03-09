@@ -15,8 +15,16 @@
 
 @media (min-width: 768px) {
     .links .link{
-        width: 140px;
-        height: 140px;
+        width: 145px;
+        height: 145px;
+        margin: 4px;
+
+    }
+}
+@media (min-width: 1900px) {
+    .links .link{
+        width: 200px;
+        height: 200px;
         margin: 5px;
 
     }

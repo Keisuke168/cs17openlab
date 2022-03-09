@@ -49,6 +49,8 @@ h2::after {
 	margin: 10px;
 	margin-bottom: 80px;
 	padding-bottom: 70px;
+	text-align: justify;
+	text-justify: inter-ideograph;
 }
 
 @media (min-width: 768px) {
@@ -107,4 +109,10 @@ img:hover{
 	h1{
 		font-size: 20px;
 	}
+}
+
+.kosan{
+	text-align: center;
+	width: 100%;
+	margin : 100px 0;
 }

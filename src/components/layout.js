@@ -1,7 +1,5 @@
 import React from "react"
 
-import Footer from "../components/footer"
-
 import "./layout.css"
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
