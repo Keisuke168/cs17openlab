@@ -47,7 +47,7 @@ export default ({ data }) => (
           </div>
           <div className="item">
               <p>
-                3年生4Qで，ディジタル信号処理の授業を担当している滝口です．我々の研究室では，音声，対話，自然言語，コンピュータビジョン，脳科学に関する研究をしています．この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Metaなどが力を入れて研究開発を進めています．私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を行っています．
+                3年生4Qで，ディジタル信号処理の授業を担当している滝口です．我々の研究室では，音声，対話，自然言語，コンピュータビジョン，脳科学に関する研究をしています．この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Metaなどが力を入れて研究開発を進めています．私たちは，医学，保健学，生物学など様々な異分野の融合による新しいAI研究も行っています．
 
               </p>
           </div>
@@ -61,7 +61,7 @@ export default ({ data }) => (
           <div className="item">
             <figure>
               <Img fluid={data.music.childImageSharp.fluid} alt="" />
-              <p>音声</p>
+              <p>音声/<br/>対話</p>
             </figure>
           </div>
           <div className="item">
