@@ -203,6 +203,7 @@ export default ({ data }) => (
 
           時間：<br/>
           <Img fluid={data.sche.childImageSharp.fluid} alt="" />
+          <div className="tips" >22日(火) 10:30 からは，上限数に達しましたので，締め切りました． </div>
           <br/><br/>
 
           場所：<br/>

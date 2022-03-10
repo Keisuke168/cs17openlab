@@ -539,6 +539,12 @@ video{
 .openlab .item {
 	font-size: 13px;
 }
+.openlab .tips{
+	color: black;
+	font-size: 15px;
+	text-decoration:underline;
+	text-decoration-color:#FF0000;
+}
 
 @media (min-width: 768px) {
 	.openlab .item {
