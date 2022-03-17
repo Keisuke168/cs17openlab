@@ -203,7 +203,7 @@ export default ({ data }) => (
 
           時間：<br/>
           <Img fluid={data.sche.childImageSharp.fluid} alt="" />
-          <div className="tips" >22日10:30から，22日15:00から，23日15:00からは上限数に達しましたので，締め切りました．</div>
+          <div className="tips" >全ての時間帯で上限数に達しましたので，予約を締め切りました．</div>
           <br/><br/>
 
           場所：<br/>
@@ -220,9 +220,9 @@ export default ({ data }) => (
 
           </div>
         </div>
-        <Link to={'https://forms.gle/GyzgwfZnqUHDia5M9'} target="_blank">
+        {/* <Link to={'https://forms.gle/GyzgwfZnqUHDia5M9'} target="_blank">
                 <h3 className="form">オープンラボ予約はこちらから（Google Form）</h3>
-        </Link>
+        </Link> */}
         <div className="thesis-theme"> 
           <h3>卒業研究テーマ例</h3>
           <ul>
