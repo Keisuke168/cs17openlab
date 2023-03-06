@@ -175,7 +175,7 @@ export default ({ data }) => (
     <section className="openlab">
       <div className="container">
         <h2 className="bar">
-          2022年3月の<br/>オープンラボについて
+          2023年3月の<br/>オープンラボについて
         </h2>
         <div className="items">
           <div className="item">
@@ -197,7 +197,6 @@ export default ({ data }) => (
 
               <span>takigu@kobe-u.ac.jp</span><br/><br/>
 
-              （コロナ禍で大学に来ることが<br/>できない学生は連絡ください．）
           </div>
           <div className="item" style={{textAlign: 'left'}}>
 
@@ -220,19 +219,19 @@ export default ({ data }) => (
 
           </div>
         </div>
-        {/* <Link to={'https://forms.gle/GyzgwfZnqUHDia5M9'} target="_blank">
+        <Link to={'https://forms.gle/GyzgwfZnqUHDia5M9'} target="_blank">
                 <h3 className="form">オープンラボ予約はこちらから（Google Form）</h3>
-        </Link> */}
+        </Link>
         <div className="thesis-theme"> 
           <h3>卒業研究テーマ例</h3>
           <ul>
             <li>人の意図や心理を理解する対話/自然言語処理に関する研究 </li>
             <li>発話障害者のための深層学習に基づく音声認識の研究 </li>
-            <li>表情豊かなオペラ歌声合成の研究 </li>
-            <li>エッジAIのためのDeep Learningコンパイラの研究 </li>
-            <li>物理シミュレーションと深層学習の融合に関する研究 </li>
-            <li>脳神経細胞のパターン予測に関する研究 </li>
-            <li>脳神経活動から想起内容の生成に関する研究 </li>
+            <li>脊髄性筋萎縮症者のための音声合成の研究  </li>
+            <li>異常検知に向けたゼロショット音響イベント認識・合成の研究 </li>
+            <li>物理シミュレーションと深層学習の融合による楽器音合成に関する研究 </li>
+            <li>視線・脳活動計測による人の認知に関する研究  </li>
+            <li>脳神経活動から脳内における想起内容の予測に関する研究  </li>
           </ul>
         </div>
 
@@ -372,7 +371,7 @@ export const query = graphql`
         }
       }
     }
-    sche: file(relativePath: { eq: "sche.png" }) {
+    sche: file(relativePath: { eq: "sche2023.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp
