@@ -202,7 +202,7 @@ export default ({ data }) => (
 
           時間：<br/>
           <Img fluid={data.sche.childImageSharp.fluid} alt="" />
-          <div className="tips" >全ての時間帯で上限数に達しましたので，予約を締め切りました．</div>
+          {/* <div className="tips" >全ての時間帯で上限数に達しましたので，予約を締め切りました．</div> */}
           <br/><br/>
 
           場所：<br/>
