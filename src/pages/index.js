@@ -220,7 +220,7 @@ export default ({ data }) => (
           </div>
         </div>
         <Link to={'https://jpn01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSc6OQ4j0PDsyRcmd46VBRCf6Un6G3D8-8vP8vk4whjT5kTylQ%2Fviewform%3Fusp%3Dsf_link&data=05%7C01%7C%7Ceaaef53e2ec14712c2e108db1e461fea%7C20ee4c8087bd422ca5063a2b0aca0615%7C0%7C0%7C638137058746148641%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=G4zSg9yPuL7fZHKDyW%2BnrMlLRnx9ihq7FYd31mlCe4E%3D&reserved=0'} target="_blank">
-                <h3 className="form">オープンラボ予約はこちらから（Google Form）</h3>
+                <h3 className="form">オープンラボ予約はこちらから（Google Forms）</h3>
         </Link>
         <div className="thesis-theme"> 
           <h3>卒業研究テーマ例</h3>
