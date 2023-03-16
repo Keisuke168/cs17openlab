@@ -201,7 +201,7 @@ export default ({ data }) => (
           <div className="item" style={{textAlign: 'left'}}>
 
           時間：<br/>
-          <Img fluid={data.sche.childImageSharp.fluid} alt="" />分
+          <Img fluid={data.sche.childImageSharp.fluid} alt="" />
           <div className="tips" >20日（月），22日（水），23日（木）10時と11時30分は上限数に達しましたので，予約を締め切りました．</div>
           <br/><br/>
 
