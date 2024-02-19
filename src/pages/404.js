@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/shared_obj/layout"
 
-import SEO from "../components/seo"
+import SEO from "../components/shared_obj/seo"
 
 export default ({ location }) => (
   <Layout>

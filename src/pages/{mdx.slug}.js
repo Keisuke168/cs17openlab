@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Reserch from '../components/research'
+import Reserch from '../components/shared_obj/research'
 
 const BlogPost = ({data}) => {
     return(
