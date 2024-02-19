@@ -1,9 +1,9 @@
 {
-  "name": "mysite-part1",
+  "name": "cs17-openlab",
   "private": true,
-  "description": "「Webサイト高速化のための 静的サイトジェネレーター活用入門」で作成するプロジェクトデータです",
-  "homepage": "https://github.com/ebisucom/gatsbyjs-book",
-  "author": "エビスコム - EBISUCOM (https://ebisu.com/)",
+  "description": "神戸大学システム情報学研究科 CS17メディア情報研究室のオープラボ特設サイト",
+  "homepage": "https://cs17kobe-u.jp",
+  "author": "Keisuke Yoshimi",
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
