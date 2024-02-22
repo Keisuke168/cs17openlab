@@ -44,7 +44,7 @@ const Info = () => {
             <section className="openlab">
                 <div className="container">
                     <h2 className="bar">
-                    2023年3月の<br/>オープンラボについて
+                    2024年3月の<br/>オープンラボについて
                     </h2>
                     <div className="items">
                         <div className="item">
