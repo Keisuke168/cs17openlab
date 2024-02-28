@@ -7,8 +7,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `神戸大学 CS17 メディア情報研究室紹介`,
-    description: `神戸大学大学院システム情報学研究科 メディア情報研究室 紹介サイト`,
+    title: `神戸大学 CS17オープンラボ特設サイト`,
+    description: `神戸大学システム情報学研究科 メディア情報研究室 オープンラボ特設サイト`,
     lang: `ja`,
     siteUrl: `https://cs17kobe-u.jp`,
     locale: `ja_JP`,
