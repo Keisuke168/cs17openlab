@@ -70,7 +70,7 @@ const Info = () => {
                         <div className="item" style={{textAlign: 'left'}}>
 
                             時間：<br/>
-                            <Img fluid={data.sche.childImageSharp.fluid} alt="" />
+
                             <div className="tips" >20日（月），22日（水），23日（木）10時と11時30分は上限数に達しましたので，予約を締め切りました．</div>
                             <br/><br/>
 
@@ -89,16 +89,16 @@ const Info = () => {
                         </div>
                     </div>
                     <Link to={'https://jpn01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSc6OQ4j0PDsyRcmd46VBRCf6Un6G3D8-8vP8vk4whjT5kTylQ%2Fviewform%3Fusp%3Dsf_link&data=05%7C01%7C%7Ceaaef53e2ec14712c2e108db1e461fea%7C20ee4c8087bd422ca5063a2b0aca0615%7C0%7C0%7C638137058746148641%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=G4zSg9yPuL7fZHKDyW%2BnrMlLRnx9ihq7FYd31mlCe4E%3D&reserved=0'} target="_blank">
-                            <h3 className="form">オープンラボ参加登録はこちらから（Google Forms）</h3>
+                            <h3 className="form">オープンラボ予約はこちらから（Google Forms）</h3>
                     </Link>
                     <div className="thesis-theme"> 
                         <h3>卒業研究テーマ例</h3>
                         <ul>
                             <li>人の意図や心理を理解する対話/自然言語処理に関する研究 </li>
-                            <li>聞き上手な対話システムに関する研究（子育て支援/悩み相談対話システム） </li>			                              <li>発話障害者のための深層学習に基づく音声認識の研究 </li>
-                            <li>脊髄性筋萎縮症/吃音当事者のための音声合成の研究  </li>
+                            <li>発話障害者のための深層学習に基づく音声認識の研究 </li>
+                            <li>脊髄性筋萎縮症者のための音声合成の研究  </li>
                             <li>異常検知に向けたゼロショット音響イベント認識・合成の研究 </li>
-                            <li>Virtual Realityによるコミュニケーション支援技術に関する研究 </li>
+                            <li>物理シミュレーションと深層学習の融合による楽器音合成に関する研究 </li>
                             <li>視線・脳活動計測による人の認知に関する研究  </li>
                             <li>脳神経活動から脳内における想起内容の予測に関する研究  </li>
                         </ul>
